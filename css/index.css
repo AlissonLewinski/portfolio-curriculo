@@ -1,4 +1,12 @@
+article {
+    padding-top: 20px;
+}
+
 .main-div {
     max-width: 1000px;
+    min-height: 1000px;
+}
+
+header {
     
 }
