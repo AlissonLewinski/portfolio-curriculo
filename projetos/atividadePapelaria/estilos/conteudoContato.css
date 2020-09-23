@@ -1,0 +1,20 @@
+.conteudo {
+    grid-area: conteudo;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    border: 2px solid black;
+    margin: 10px;
+    max-width: 750px;
+    width: 90%;
+    height: 423px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.radioDiv {
+    display: inline-block;
+}

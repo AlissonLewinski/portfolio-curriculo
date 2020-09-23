@@ -1,0 +1,16 @@
+.conteudo {
+    grid-area: conteudo;
+}
+
+table {
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+th, td {
+    text-align: center;
+
+}

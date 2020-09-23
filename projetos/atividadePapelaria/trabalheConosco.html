@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaperWiKi - Trabalhe Conosco</title>
+    <link rel="stylesheet" href="estilos/cabecalhoEDescricao.css">
+    <link rel="stylesheet" href="estilos/conteudoTrabalheConosco.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="logo">
+                PaperWiKi
+        </a>
+        <nav class="menu">
+            <a href="index.html">Início</a>
+
+            <a href="produtos.html">Produtos</a>
+
+            <a href="promocoes.html">Promoções</a>
+
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    
+    <div class="descricao">Preencha o formulário para uma chance de trabalhar conosco!</div>
+
+    <div class="conteudo">
+
+        <form method="POST">
+            Nome completo: <br>
+            <input type="text" name="nome" id="nome"> <br>
+
+            Data de nascimento: <br>
+            <input type="text" name="dataN" id="dataN"> <br>
+
+            E-mail: <br>
+            <input type="text" name="email" id="email"> <br>
+
+            Telefone: <br>
+            <input type="text" name="telefone" id="telefone"> <br>
+
+            Experiências: <br>
+            <textarea name="exp" id="exp" cols="30" rows="10" placeholder="Suas experiências.."></textarea> <br>
+
+            Fale sobre você e sobre que tipo de cargo almeja na empresa: <br>
+            <textarea name="sobre" id="sobre" cols="30" rows="10" placeholder="Sobre você..."></textarea> <br>
+            
+            <input type="submit" name="btnEnviar" value="Enviar">
+        </form>
+
+    </div>
+</body>
+
+</html>

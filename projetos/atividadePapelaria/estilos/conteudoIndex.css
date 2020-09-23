@@ -1,0 +1,7 @@
+.conteudo {
+    grid-area: conteudo;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

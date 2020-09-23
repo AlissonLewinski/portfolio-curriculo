@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <style>
+        body {
+            min-height: 400px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imc {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="imc"></div>
+    <div class="descricao"></div>
+
+    <script type="text/javascript">
+        var nome = prompt("Insira seu nome:");
+        var peso = prompt("Insira seu peso: (Exemplo: 65.7)");
+        var altura = prompt("Insira sua altura: (Exemplo: 1.75)");
+
+        function calculoIMC(peso, altura) {
+            peso = parseFloat(peso)
+            altura = parseFloat(altura)
+            return peso / (altura * altura);
+        }
+
+        var imc = calculoIMC(peso, altura)
+        alert("O IMC é " + imc.toFixed(2));
+
+        if (imc < 18.5) {
+            var texto = nome + " - Baixo peso - Maior probabilidade de anorexia.";
+        } else if (imc >= 18.5 && imc < 25){
+            var texto = nome + " - Peso normal - Maior probabilidade de ser um indivíduo saudável.";
+        } else if (imc >= 25 && imc < 30) {
+            var texto = nome + " - Pré-obesidade - Alguma probabilidade de problemas de saúde. Predisposição a se tornar obeso.";
+        } else if (imc >= 30 && imc < 35) {
+            var texto = nome + " - Obesidade Grau I - Risco moderado de diabetes tipo II, hipertensão, colesterol, cardiopatia.";
+        } else if (imc >= 35 && imc < 40) {
+            var texto = nome + " - Obesidade Grau II - Risco grave. Aumenta o risco de doenças associadas. O risco de mortalidade aumenta 50%.";
+        } else if (imc >= 40) {
+            var texto = nome + " - Obesidade Grau III ou obesidade mórbida - Risco muito grave. O risco de doenças associadas assim como a mortalidade aumenta 90%";
+        }
+
+        alert(texto);
+
+        var imcTela = document.querySelector('.imc');
+        var descricao = document.querySelector('.descricao');
+
+        imcTela.innerHTML = `IMC = ${imc.toFixed(2)}`;
+        descricao.innerHTML = texto;
+    </script>
+</body>
+</html>
